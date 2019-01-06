@@ -1,0 +1,36 @@
+.instructions-display {
+  position: absolute;
+  top: 15px;
+  z-index: 50;
+  height: 700px;
+  width: 800px;
+  border-radius: 50px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.instructions-header {
+  font-size: 3rem;
+  background-color: green;
+  margin: 50px 0px 0px 20px;
+  width: 50%;
+  height: 14%;
+  border-radius: 20px;
+}
+
+.instructions-article {
+  font-size: 2rem;
+  margin: 5px;
+}
+
+.exit-instructions-button {
+  width: 300px;
+  height: 125px;
+  margin: 10px;
+  font-size: 1.8rem;
+  background-color: yellow;
+  border-radius: 15px;
+}

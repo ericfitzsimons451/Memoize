@@ -26,11 +26,11 @@ class App extends Component {
     .catch(err => console.log(err))
   }
 
-  displayInstructions = (event) => {
+  displayInstructions = () => {
     this.setState({showInstructions: true})
   }
 
-  returnToMainDisplay = ()=>  {
+  returnToMainDisplay = () =>  {
     this.setState({showInstructions: false})
   }
 
@@ -43,7 +43,15 @@ class App extends Component {
         )
     } else if (this.state.isLoading === false && this.state.showInstructions === true) {
         return (
-          <Instructions returnToMainDisplay={this.returnToMainDisplay} />
+          <div className="App">       
+            <header className="App-header">
+            <Instructions returnToMainDisplay={this.returnToMainDisplay} />
+            <h1 className="App-title">Mod 2 Study Guide</h1>
+            <InstructionsButton displayInstructions={this.displayInstructions} />
+            <Display questionBank={this.state.data} />
+          </header>
+        </div>
+
         )
     } else {
       return (
