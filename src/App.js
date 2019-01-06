@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import Display from './Display.js'
 import './reset.css'
-import './App.css';
+import './App.scss';
 
 class App extends Component {
   constructor() {
@@ -10,7 +10,6 @@ class App extends Component {
 
     this.state = {
       data: null,
-      selectedCategory: '',
       isLoading: true    
     }
   }

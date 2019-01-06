@@ -7,7 +7,7 @@ function AnswerInfo(props) {
       <h3 className="answer-card--question">{props.questionInfo.question}</h3>
       <h3 className="answer-card--correct-answer">Correct: {props.questionInfo.correctAnswer}</h3>
       <a href={props.questionInfo.link} className="answer-card--link">More Info</a>
-      <button>Store Answer For Later</button>
+      <button onClick={props.saveCard}>Store Answer For Later</button>
     </div>
   )
 }

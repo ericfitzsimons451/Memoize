@@ -16,8 +16,13 @@ class Display extends Component {
   }
 
   displayAnswer = (event) => {
-    console.log(event.target)
     this.setState({showAllQuestions: false, displayAnswer: true})
+  }
+
+  putInLocalStorage = (event) => {
+    event.preventDefault();
+    console.log(event.target.parentElement)
+    
   }
 
   render() {
@@ -42,7 +47,8 @@ class Display extends Component {
           {
             this.props.questionBank.map((question) => {
               return <AnswerCard 
-                      questionInfo={question} />
+                      questionInfo={question}
+                      saveCard={this.putInLocalStorage} />
             })
           }
         </main>
