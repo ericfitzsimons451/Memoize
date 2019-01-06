@@ -1,4 +1,23 @@
 .question-card {
-  width: 30vh;
-  height: 20vh;
+  width: 400px;
+  border: 1px solid black;
+  background-color: #778078;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+
+.question-card--topic {
+
+  font-size: 1.7rem;
+  padding: 7px;
+}
+
+.answer-selection-one,
+.answer-selection-two,
+.answer-selection-three {
+  font-size: 1.5rem;
+  padding: 10px 5px 5px 5px;
+  border-bottom: 1px dashed white;
 }
