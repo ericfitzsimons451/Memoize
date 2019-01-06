@@ -9,7 +9,7 @@ function Question(props){
       <h3 className="answer-selection-one">{props.questionInfo.answer1}</h3>
       <h3 className="answer-selection-two">{props.questionInfo.answer2}</h3>
       <h3 className="answer-selection-three">{props.questionInfo.answer3}</h3>
-      <button onClick={props.showAnswer} type="button" >button</button>
+      <button onClick={props.showAnswer} type="submit" >button</button>
     </div>
   )
 }
