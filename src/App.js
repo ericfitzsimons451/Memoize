@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import Display from './Display.js';
 import InstructionsButton from './InstructionsButton.js';
 import Instructions from './Instructions.js';
@@ -13,7 +12,7 @@ class App extends Component {
     this.state = {
       data: null,
       isLoading: true,
-      showInstructions: false   
+      showInstructions: false,
     }
   }
 
@@ -26,13 +25,25 @@ class App extends Component {
     .catch(err => console.log(err))
   }
 
-  displayInstructions = () => {
+  displayInstructions = (event) => {
+    event.preventDefault()
     this.setState({showInstructions: true})
   }
 
   returnToMainDisplay = () =>  {
     this.setState({showInstructions: false})
   }
+
+  // pullStoredCards = () => {
+  //   let keysForStorage = Object.keys(localStorage)
+  //   let storedItems = []
+  //   for (var i = 1; i < keysForStorage.length; i++) {
+
+  //   storedItems.push(JSON.parse(localStorage.getItem(keysForStorage[i])))
+
+  //   this.setState({storedObjects: storedItems})
+  //   }
+  // }
 
   render() {
     if (this.state.isLoading) {
@@ -51,7 +62,6 @@ class App extends Component {
             <Display questionBank={this.state.data} />
           </header>
         </div>
-
         )
     } else {
       return (
@@ -59,7 +69,9 @@ class App extends Component {
           <header className="App-header">
             <h1 className="App-title">Mod 2 Study Guide</h1>
             <InstructionsButton displayInstructions={this.displayInstructions} />
-            <Display questionBank={this.state.data} />
+           
+            <Display questionBank={this.state.data}
+                     key={this.state.data.id} />
           </header>
         </div>
       );
