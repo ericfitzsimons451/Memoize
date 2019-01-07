@@ -12,17 +12,22 @@ class Display extends Component {
       questions: this.props.questionBank,
       showAllQuestions: true,
       displayAnswer: false,
+      currentAnswerToDisplay: null
     }
   }
 
   displayAnswer = (event) => {
-    this.setState({showAllQuestions: false, displayAnswer: true})
+    let identifier = event.target.parentElement.id
+    let selectedAnswer = this.state.questions.find((question) => {
+      return question.id == identifier   
+    })
+    this.setState({displayAnswer: true,currentAnswerToDisplay: selectedAnswer, showAllQuestions: false})
   }
 
   putInLocalStorage = (event) => {
     event.preventDefault();
     console.log(event.target.parentElement)
-    
+
   }
 
   render() {
@@ -42,15 +47,10 @@ class Display extends Component {
           </main> 
         )
     } else if (this.state.showAllQuestions === false && this.state.displayAnswer === true) {
+
       return (
         <main className="main-display">
-          {
-            this.props.questionBank.map((question) => {
-              return <AnswerCard 
-                      questionInfo={question}
-                      saveCard={this.putInLocalStorage} />
-            })
-          }
+             <AnswerCard questionInfo={this.state.currentAnswerToDisplay} saveCard={this.putInLocalStorage} />
         </main>
       )
     }
