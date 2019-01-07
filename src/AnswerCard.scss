@@ -1,0 +1,26 @@
+.answer-card {
+  width: 400px;
+  height: 250px;
+  border: 1px solid black;
+  background-color: #778078;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+
+.answer-card--question {
+  font-size: 2rem;
+  padding: 7px;
+}
+
+.answer-card--correct-answer {
+  font-size: 1.7rem;
+  padding: 7px;
+  background-color: red;
+  border-radius: 15px;
+}
+
+.answer-card-link {
+  font-size: 2.3rem
+}

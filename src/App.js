@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import './App.css';
 import Display from './Display.js'
+import './reset.css'
+import './App.scss';
 
 class App extends Component {
   constructor() {
@@ -9,7 +10,6 @@ class App extends Component {
 
     this.state = {
       data: null,
-      selectedCategory: '',
       isLoading: true    
     }
   }
@@ -31,7 +31,7 @@ class App extends Component {
     if (this.state.isLoading) {
       return (
         <div>
-        <p>Loading</p>
+        <p>Loading...</p>
         </div>
         )
     } else {
@@ -39,7 +39,7 @@ class App extends Component {
         <div className="App">       
           <header className="App-header">
             <h1 className="App-title">Mod 2 Study Guide</h1>
-            <h3 className="instructions">Select some questions!</h3>
+            <div className="instructions">Click to see what happens!</div>
             <Display questionBank={this.state.data}/>
           </header>
         </div>
