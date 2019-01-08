@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InstructionsButton should match the snapshot with all the correct data passed to the InstructionsButton 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <InstructionsButton
+    displayInstructions={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <button
+        className="instructions-button"
+        onClick={[MockFunction]}
+        type="button"
+      >
+        Click for Instructions
+      </button>,
+      "className": "instructions-style-div",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": "Click for Instructions",
+        "className": "instructions-button",
+        "onClick": [MockFunction],
+        "type": "button",
+      },
+      "ref": null,
+      "rendered": "Click for Instructions",
+      "type": "button",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <button
+          className="instructions-button"
+          onClick={[MockFunction]}
+          type="button"
+        >
+          Click for Instructions
+        </button>,
+        "className": "instructions-style-div",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Click for Instructions",
+          "className": "instructions-button",
+          "onClick": [MockFunction],
+          "type": "button",
+        },
+        "ref": null,
+        "rendered": "Click for Instructions",
+        "type": "button",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

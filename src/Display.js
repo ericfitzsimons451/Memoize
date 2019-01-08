@@ -39,6 +39,7 @@ class Display extends Component {
       alert('Incorrect.  Try again')
     } else {
       this.setState({displayAnswer: true, currentAnswerToDisplay: selectedAnswer, showAllQuestions: false})
+      console.log('test', this.state.currentAnswerToDisplay)
     }
   }
 
