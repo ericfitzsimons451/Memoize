@@ -36,7 +36,6 @@ class App extends Component {
   }
 
   getUnansweredQuestions = () => {
-    console.log('appGetUnansweredQuestions')
     let correctQuestionIds = this.state.correctlyAnsweredQuestions ? Object.keys(this.state.correctlyAnsweredQuestions) : []
     let filteredQuestions = this.state.data.filter((question) => {
       return !correctQuestionIds.includes(question.id.toString())
@@ -45,7 +44,6 @@ class App extends Component {
   }
 
   setAnsweredQuestionsInState = (obj) => {
-    console.log('objForSETANSWERSINSTATE', obj)
     this.setState({correctlyAnsweredQuestions: obj})
   }
 

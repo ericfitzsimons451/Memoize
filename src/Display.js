@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Question from './Question.js'
 import AnswerCard from './AnswerCard.js'
+import IncorrectAnswerPopup from './IncorrectAnswerPopup.js'
 import './reset.css'
 import './Display.scss'
 
@@ -12,6 +13,7 @@ class Display extends Component {
       showAllQuestions: true,
       displayAnswer: false,
       currentAnswerToDisplay: null,
+      showIncorrectAnswerPopup: false
     }
   }
 
@@ -36,11 +38,14 @@ class Display extends Component {
       return question.id == identifier   
     })
     if (event.target.innerText !== selectedAnswer.correctAnswer) {
-      alert('Incorrect.  Try again')
+      this.setState({displayAnswer: false, currentAnswerToDisplay: null, showAllQuestions: false, showIncorrectAnswerPopup: true})
     } else {
       this.setState({displayAnswer: true, currentAnswerToDisplay: selectedAnswer, showAllQuestions: false})
-      console.log('test', this.state.currentAnswerToDisplay)
     }
+  }
+
+  returnToDisplayAll = () => {
+    this.setState({displayAnswer: false, currentAnswerToDisplay: null, showAllQuestions: true, showIncorrectAnswerPopup: false})
   }
 
   render() {
@@ -57,6 +62,12 @@ class Display extends Component {
           }
         </main> 
       )
+    } else if (this.state.displayAnswer === false && this.state.currentAnswerToDisplay === null && this.state.showAllQuestions === false && this.state.showIncorrectAnswerPopup === true) {
+        return(
+          <main className="main-display">
+            <IncorrectAnswerPopup returnToDisplayAll={this.returnToDisplayAll} />
+          </main>
+          )
     } else if (this.state.showAllQuestions === false && this.state.displayAnswer === true) {
       return (
         <main className="main-display">
