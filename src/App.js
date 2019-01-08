@@ -13,6 +13,7 @@ class App extends Component {
       data: null,
       isLoading: true,
       showInstructions: false,
+      correctlyAnsweredQuestions: JSON.parse(localStorage.getItem('correctAnswers'))
     }
   }
 
@@ -34,16 +35,19 @@ class App extends Component {
     this.setState({showInstructions: false})
   }
 
-  // pullStoredCards = () => {
-  //   let keysForStorage = Object.keys(localStorage)
-  //   let storedItems = []
-  //   for (var i = 1; i < keysForStorage.length; i++) {
+  getUnansweredQuestions = () => {
+    console.log('appGetUnansweredQuestions')
+    let correctQuestionIds = this.state.correctlyAnsweredQuestions ? Object.keys(this.state.correctlyAnsweredQuestions) : []
+    let filteredQuestions = this.state.data.filter((question) => {
+      return !correctQuestionIds.includes(question.id.toString())
+    })
+    return filteredQuestions
+  }
 
-  //   storedItems.push(JSON.parse(localStorage.getItem(keysForStorage[i])))
-
-  //   this.setState({storedObjects: storedItems})
-  //   }
-  // }
+  setAnsweredQuestionsInState = (obj) => {
+    console.log('objForSETANSWERSINSTATE', obj)
+    this.setState({correctlyAnsweredQuestions: obj})
+  }
 
   render() {
     if (this.state.isLoading) {
@@ -51,7 +55,7 @@ class App extends Component {
         <div>
           <p>Loading...</p>
         </div>
-        )
+      )
     } else if (this.state.isLoading === false && this.state.showInstructions === true) {
         return (
           <div className="App">       
@@ -59,10 +63,12 @@ class App extends Component {
             <Instructions returnToMainDisplay={this.returnToMainDisplay} />
             <h1 className="App-title">Mod 2 Study Guide</h1>
             <InstructionsButton displayInstructions={this.displayInstructions} />
-            <Display questionBank={this.state.data} />
+            <Display questionBank={this.getUnansweredQuestions()}
+                     setAnsweredQuestionsInState={this.setAnsweredQuestionsInState}
+                     key={this.state.data.id} />
           </header>
         </div>
-        )
+      )
     } else {
       return (
         <div className="App">       
@@ -70,7 +76,8 @@ class App extends Component {
             <h1 className="App-title">Mod 2 Study Guide</h1>
             <InstructionsButton displayInstructions={this.displayInstructions} />
            
-            <Display questionBank={this.state.data}
+            <Display questionBank={this.getUnansweredQuestions()}
+                     setAnsweredQuestionsInState={this.setAnsweredQuestionsInState}
                      key={this.state.data.id} />
           </header>
         </div>

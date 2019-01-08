@@ -1,0 +1,209 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Instructions should match the snapshot with all data correctly passed to the Instructions 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Instructions
+    returnToMainDisplay={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h2
+          className="instructions-header"
+        >
+          How to Use This App
+        </h2>,
+        <p
+          className="instructions-article"
+        >
+          Click on any of the cards to display the correct answer.
+        </p>,
+        <p
+          className="instructions-article"
+        >
+          After viewing the correct answer, click the button to return to the main display.
+        </p>,
+        <button
+          className="exit-instructions-button"
+          onClick={[MockFunction]}
+          type="button"
+        >
+          Let's Go!
+        </button>,
+      ],
+      "className": "instructions-display",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "How to Use This App",
+          "className": "instructions-header",
+        },
+        "ref": null,
+        "rendered": "How to Use This App",
+        "type": "h2",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Click on any of the cards to display the correct answer.",
+          "className": "instructions-article",
+        },
+        "ref": null,
+        "rendered": "Click on any of the cards to display the correct answer.",
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "After viewing the correct answer, click the button to return to the main display.",
+          "className": "instructions-article",
+        },
+        "ref": null,
+        "rendered": "After viewing the correct answer, click the button to return to the main display.",
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Let's Go!",
+          "className": "exit-instructions-button",
+          "onClick": [MockFunction],
+          "type": "button",
+        },
+        "ref": null,
+        "rendered": "Let's Go!",
+        "type": "button",
+      },
+    ],
+    "type": "article",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h2
+            className="instructions-header"
+          >
+            How to Use This App
+          </h2>,
+          <p
+            className="instructions-article"
+          >
+            Click on any of the cards to display the correct answer.
+          </p>,
+          <p
+            className="instructions-article"
+          >
+            After viewing the correct answer, click the button to return to the main display.
+          </p>,
+          <button
+            className="exit-instructions-button"
+            onClick={[MockFunction]}
+            type="button"
+          >
+            Let's Go!
+          </button>,
+        ],
+        "className": "instructions-display",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "How to Use This App",
+            "className": "instructions-header",
+          },
+          "ref": null,
+          "rendered": "How to Use This App",
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Click on any of the cards to display the correct answer.",
+            "className": "instructions-article",
+          },
+          "ref": null,
+          "rendered": "Click on any of the cards to display the correct answer.",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "After viewing the correct answer, click the button to return to the main display.",
+            "className": "instructions-article",
+          },
+          "ref": null,
+          "rendered": "After viewing the correct answer, click the button to return to the main display.",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Let's Go!",
+            "className": "exit-instructions-button",
+            "onClick": [MockFunction],
+            "type": "button",
+          },
+          "ref": null,
+          "rendered": "Let's Go!",
+          "type": "button",
+        },
+      ],
+      "type": "article",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

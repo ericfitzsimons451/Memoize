@@ -9,83 +9,58 @@ class Display extends Component {
     super(props);
 
     this.state = {
-      questions: this.props.questionBank,
       showAllQuestions: true,
       displayAnswer: false,
       currentAnswerToDisplay: null,
     }
   }
 
-  // displayAnswerCard = (event) => {
-  //   let identifier = event.target.parentElement.id
-  //   let selectedAnswer = this.state.questions.find((question) => {
-  //     return question.id == identifier   
-  //   })
-  //   this.setState({displayAnswer: true,currentAnswerToDisplay: selectedAnswer, showAllQuestions: false})
-  // }
-
   putInLocalStorage = (event) => {
     event.preventDefault();
+    let intoStorage;
     if (localStorage.length === 0) {   
-      let array = [this.state.currentAnswerToDisplay.id]
-      localStorage.setItem("correctAnswers", JSON.stringify(array))
+      intoStorage = {[this.state.currentAnswerToDisplay.id]: true}
+      localStorage.setItem("correctAnswers", JSON.stringify(intoStorage))
     } else if (localStorage.length > 0) {    
-        let retrieved = JSON.parse(localStorage.getItem("correctAnswers"))
-        retrieved.push(this.state.currentAnswerToDisplay.id)
-       localStorage.setItem("correctAnswers", JSON.stringify(retrieved))
+      intoStorage = JSON.parse(localStorage.getItem("correctAnswers"))
+      intoStorage[this.state.currentAnswerToDisplay.id] = true
+      localStorage.setItem("correctAnswers", JSON.stringify(intoStorage))
     }
+    this.props.setAnsweredQuestionsInState(intoStorage)
     this.setState({currentAnswerToDisplay: null, showAllQuestions: true, displayAnswer: false})
   }
 
   verifyAnswer = (event) => {
     let identifier = event.target.parentElement.id
-    let selectedAnswer = this.state.questions.find((question) => {
+    let selectedAnswer = this.props.questionBank.find((question) => {
       return question.id == identifier   
     })
     if (event.target.innerText !== selectedAnswer.correctAnswer) {
       alert('Incorrect.  Try again')
     } else {
-      this.setState({displayAnswer: true,currentAnswerToDisplay: selectedAnswer, showAllQuestions: false})
+      this.setState({displayAnswer: true, currentAnswerToDisplay: selectedAnswer, showAllQuestions: false})
+      console.log('test', this.state.currentAnswerToDisplay)
     }
   }
-  // checkLocalStorage = () => {
-  //   console.log('checkStorage', localStorage.correctAnswers)
-  //   if (localStorage.correctAnswers.length === 0) {
-  //     let found = this.state.questions.forEach((question) => {
-  //       localStorage.correctAnswers.forEach((answer) => {
-  //         if (answer == question.id) {
-  //           return question
-  //         }
-  //       })
-  //       console.log('found', found)
-  //       return found
-  //     })
-  //   }
-  
 
   render() {
-    // let questions = this.checkLocalStorage();
     if (this.state.showAllQuestions) {
-
-    return (
-          <main className="main-display">    
-            {
-              this.props.questionBank.map((question) => {
-
-                return <Question 
-                        questionInfo={question}
-                        // showAnswer={this.displayAnswerCard}
-                        verifyAnswer={this.verifyAnswer}
-                        key={question.id} />
-              })
-            }
-          </main> 
-        )
+      return (
+        <main className="main-display">    
+          {
+            this.props.questionBank.map((question) => {
+              return <Question 
+                      questionInfo={question}
+                      verifyAnswer={this.verifyAnswer}
+                      key={question.id} />
+            })
+          }
+        </main> 
+      )
     } else if (this.state.showAllQuestions === false && this.state.displayAnswer === true) {
-
       return (
         <main className="main-display">
-             <AnswerCard questionInfo={this.state.currentAnswerToDisplay} saveCard={this.putInLocalStorage} />
+          <AnswerCard questionInfo={this.state.currentAnswerToDisplay} putInLocalStorage={this.putInLocalStorage} />
         </main>
       )
     } 

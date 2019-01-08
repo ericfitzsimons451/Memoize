@@ -1,0 +1,227 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Question should match the snapshot with all the data passed down 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Question
+    questionInfo={
+      Object {
+        "answer1": "The DOM Tree",
+        "answer2": "The Global Window Object",
+        "answer3": "The Call Stack",
+        "categories": "Context",
+        "correctAnswer": "The Global Window Object",
+        "id": 1,
+        "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this",
+        "question": "What is the default value of the THIS keyword?",
+      }
+    }
+    verifyAnswer={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h2
+          className="question-card--topic"
+        >
+          What is the default value of the THIS keyword?
+        </h2>,
+        <h3
+          className="answer-selection-one"
+          onClick={[MockFunction]}
+        >
+          The DOM Tree
+        </h3>,
+        <h3
+          className="answer-selection-two"
+          onClick={[MockFunction]}
+        >
+          The Global Window Object
+        </h3>,
+        <h3
+          className="answer-selection-three"
+          onClick={[MockFunction]}
+        >
+          The Call Stack
+        </h3>,
+      ],
+      "className": "question-card",
+      "id": 1,
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "What is the default value of the THIS keyword?",
+          "className": "question-card--topic",
+        },
+        "ref": null,
+        "rendered": "What is the default value of the THIS keyword?",
+        "type": "h2",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "The DOM Tree",
+          "className": "answer-selection-one",
+          "onClick": [MockFunction],
+        },
+        "ref": null,
+        "rendered": "The DOM Tree",
+        "type": "h3",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "The Global Window Object",
+          "className": "answer-selection-two",
+          "onClick": [MockFunction],
+        },
+        "ref": null,
+        "rendered": "The Global Window Object",
+        "type": "h3",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "The Call Stack",
+          "className": "answer-selection-three",
+          "onClick": [MockFunction],
+        },
+        "ref": null,
+        "rendered": "The Call Stack",
+        "type": "h3",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h2
+            className="question-card--topic"
+          >
+            What is the default value of the THIS keyword?
+          </h2>,
+          <h3
+            className="answer-selection-one"
+            onClick={[MockFunction]}
+          >
+            The DOM Tree
+          </h3>,
+          <h3
+            className="answer-selection-two"
+            onClick={[MockFunction]}
+          >
+            The Global Window Object
+          </h3>,
+          <h3
+            className="answer-selection-three"
+            onClick={[MockFunction]}
+          >
+            The Call Stack
+          </h3>,
+        ],
+        "className": "question-card",
+        "id": 1,
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "What is the default value of the THIS keyword?",
+            "className": "question-card--topic",
+          },
+          "ref": null,
+          "rendered": "What is the default value of the THIS keyword?",
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "The DOM Tree",
+            "className": "answer-selection-one",
+            "onClick": [MockFunction],
+          },
+          "ref": null,
+          "rendered": "The DOM Tree",
+          "type": "h3",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "The Global Window Object",
+            "className": "answer-selection-two",
+            "onClick": [MockFunction],
+          },
+          "ref": null,
+          "rendered": "The Global Window Object",
+          "type": "h3",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "The Call Stack",
+            "className": "answer-selection-three",
+            "onClick": [MockFunction],
+          },
+          "ref": null,
+          "rendered": "The Call Stack",
+          "type": "h3",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
