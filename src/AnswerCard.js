@@ -4,6 +4,7 @@ import './AnswerCard.scss';
 function AnswerCard(props) {
   return(
     <div className="answer-card" id={props.questionInfo.id}>
+      <h2 className="answer-card--correct">CORRECT!</h2>
       <h3 className="answer-card--question">{props.questionInfo.id}) {props.questionInfo.question}</h3>
       <h3 className="answer-card--correct-answer">Correct Answer: {props.questionInfo.correctAnswer}</h3>
       <h3 className="answer-card--text">Are you confident about this information?</h3>
