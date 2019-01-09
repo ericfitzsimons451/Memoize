@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Question from './Question.js'
 import AnswerCard from './AnswerCard.js'
+import IncorrectAnswerPopup from './IncorrectAnswerPopup.js'
 import './reset.css'
 import './Display.scss'
 
@@ -12,35 +13,38 @@ class Display extends Component {
       showAllQuestions: true,
       displayAnswer: false,
       currentAnswerToDisplay: null,
+      showIncorrectAnswerPopup: false
     }
   }
 
-  putInLocalStorage = (event) => {
-    event.preventDefault();
-    let intoStorage;
+  putInLocalStorage = () => {
+    let itemsForStorage;
     if (localStorage.length === 0) {   
-      intoStorage = {[this.state.currentAnswerToDisplay.id]: true}
-      localStorage.setItem("correctAnswers", JSON.stringify(intoStorage))
+      itemsForStorage = {[this.state.currentAnswerToDisplay.id]: true}
+      localStorage.setItem("correctAnswers", JSON.stringify(itemsForStorage))
     } else if (localStorage.length > 0) {    
-      intoStorage = JSON.parse(localStorage.getItem("correctAnswers"))
-      intoStorage[this.state.currentAnswerToDisplay.id] = true
-      localStorage.setItem("correctAnswers", JSON.stringify(intoStorage))
+      itemsForStorage = JSON.parse(localStorage.getItem("correctAnswers"))
+      itemsForStorage[this.state.currentAnswerToDisplay.id] = true
+      localStorage.setItem("correctAnswers", JSON.stringify(itemsForStorage))
     }
-    this.props.setAnsweredQuestionsInState(intoStorage)
+    this.props.setAnsweredQuestionsInState(itemsForStorage)
     this.setState({currentAnswerToDisplay: null, showAllQuestions: true, displayAnswer: false})
   }
 
   verifyAnswer = (event) => {
     let identifier = event.target.parentElement.id
-    let selectedAnswer = this.props.questionBank.find((question) => {
+    let selectedQuestion = this.props.questionBank.find((question) => {
       return question.id == identifier   
     })
-    if (event.target.innerText !== selectedAnswer.correctAnswer) {
-      alert('Incorrect.  Try again')
+    if (event.target.innerText !== selectedQuestion.correctAnswer) {
+      this.setState({displayAnswer: false, currentAnswerToDisplay: null, showAllQuestions: false, showIncorrectAnswerPopup: true})
     } else {
-      this.setState({displayAnswer: true, currentAnswerToDisplay: selectedAnswer, showAllQuestions: false})
-      console.log('test', this.state.currentAnswerToDisplay)
+      this.setState({displayAnswer: true, currentAnswerToDisplay: selectedQuestion, showAllQuestions: false})
     }
+  }
+
+  returnToDisplayAll = () => {
+    this.setState({displayAnswer: false, currentAnswerToDisplay: null, showAllQuestions: true, showIncorrectAnswerPopup: false})
   }
 
   render() {
@@ -57,10 +61,20 @@ class Display extends Component {
           }
         </main> 
       )
+    } else if (this.state.displayAnswer === false && this.state.showAllQuestions === false && this.state.showIncorrectAnswerPopup === true) {
+        return(
+          <main className="main-display">
+            <IncorrectAnswerPopup 
+              returnToDisplayAll={this.returnToDisplayAll}
+              questionInfo={this.state.currentAnswerToDisplay}
+             />
+          </main>
+          )
     } else if (this.state.showAllQuestions === false && this.state.displayAnswer === true) {
       return (
         <main className="main-display">
-          <AnswerCard questionInfo={this.state.currentAnswerToDisplay} putInLocalStorage={this.putInLocalStorage} />
+          <AnswerCard questionInfo={this.state.currentAnswerToDisplay} putInLocalStorage={this.putInLocalStorage} 
+            returnToDisplayAll={this.returnToDisplayAll}/>
         </main>
       )
     } 

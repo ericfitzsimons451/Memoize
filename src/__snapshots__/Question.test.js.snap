@@ -35,6 +35,8 @@ ShallowWrapper {
         <h2
           className="question-card--topic"
         >
+          1
+          ) 
           What is the default value of the THIS keyword?
         </h2>,
         <h3
@@ -66,11 +68,19 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "What is the default value of the THIS keyword?",
+          "children": Array [
+            1,
+            ") ",
+            "What is the default value of the THIS keyword?",
+          ],
           "className": "question-card--topic",
         },
         "ref": null,
-        "rendered": "What is the default value of the THIS keyword?",
+        "rendered": Array [
+          1,
+          ") ",
+          "What is the default value of the THIS keyword?",
+        ],
         "type": "h2",
       },
       Object {
@@ -125,6 +135,8 @@ ShallowWrapper {
           <h2
             className="question-card--topic"
           >
+            1
+            ) 
             What is the default value of the THIS keyword?
           </h2>,
           <h3
@@ -156,11 +168,19 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "What is the default value of the THIS keyword?",
+            "children": Array [
+              1,
+              ") ",
+              "What is the default value of the THIS keyword?",
+            ],
             "className": "question-card--topic",
           },
           "ref": null,
-          "rendered": "What is the default value of the THIS keyword?",
+          "rendered": Array [
+            1,
+            ") ",
+            "What is the default value of the THIS keyword?",
+          ],
           "type": "h2",
         },
         Object {

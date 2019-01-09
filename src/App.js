@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Display from './Display.js';
 import InstructionsButton from './InstructionsButton.js';
 import Instructions from './Instructions.js';
+import ShowAllQuestionsButton from './ShowAllQuestionsButton.js'
 import './reset.css';
 import './App.scss';
 
@@ -36,7 +37,6 @@ class App extends Component {
   }
 
   getUnansweredQuestions = () => {
-    console.log('appGetUnansweredQuestions')
     let correctQuestionIds = this.state.correctlyAnsweredQuestions ? Object.keys(this.state.correctlyAnsweredQuestions) : []
     let filteredQuestions = this.state.data.filter((question) => {
       return !correctQuestionIds.includes(question.id.toString())
@@ -45,8 +45,13 @@ class App extends Component {
   }
 
   setAnsweredQuestionsInState = (obj) => {
-    console.log('objForSETANSWERSINSTATE', obj)
     this.setState({correctlyAnsweredQuestions: obj})
+  }
+
+  showAllQuestions = (obj) => {
+    localStorage.clear()
+    this.setState({correctlyAnsweredQuestions: obj, isLoading: false, showInstructions: false})
+
   }
 
   render() {
@@ -62,7 +67,6 @@ class App extends Component {
             <header className="App-header">
             <Instructions returnToMainDisplay={this.returnToMainDisplay} />
             <h1 className="App-title">Mod 2 Study Guide</h1>
-            <InstructionsButton displayInstructions={this.displayInstructions} />
             <Display questionBank={this.getUnansweredQuestions()}
                      setAnsweredQuestionsInState={this.setAnsweredQuestionsInState}
                      key={this.state.data.id} />
@@ -74,8 +78,10 @@ class App extends Component {
         <div className="App">       
           <header className="App-header">
             <h1 className="App-title">Mod 2 Study Guide</h1>
-            <InstructionsButton displayInstructions={this.displayInstructions} />
-           
+            <div className="app-button-container">
+              <InstructionsButton displayInstructions={this.displayInstructions} />
+             <ShowAllQuestionsButton showAllQuestions={this.showAllQuestions} />
+           </div>
             <Display questionBank={this.getUnansweredQuestions()}
                      setAnsweredQuestionsInState={this.setAnsweredQuestionsInState}
                      key={this.state.data.id} />

@@ -1,0 +1,175 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IncorrectAnswerPopup should match the snapshot with all correct data passed down 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <IncorrectAnswerPopup
+    returnToDisplayAll={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h2
+          className="popup--title"
+        >
+          Your answer was not correct!
+        </h2>,
+        <h3
+          className="popup-text"
+        >
+          Sorry!  Please try again.
+        </h3>,
+        <button
+          className="popup--button"
+          onClick={[MockFunction]}
+          type="button"
+        >
+          Return to Question List
+        </button>,
+      ],
+      "className": "popup--container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Your answer was not correct!",
+          "className": "popup--title",
+        },
+        "ref": null,
+        "rendered": "Your answer was not correct!",
+        "type": "h2",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Sorry!  Please try again.",
+          "className": "popup-text",
+        },
+        "ref": null,
+        "rendered": "Sorry!  Please try again.",
+        "type": "h3",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Return to Question List",
+          "className": "popup--button",
+          "onClick": [MockFunction],
+          "type": "button",
+        },
+        "ref": null,
+        "rendered": "Return to Question List",
+        "type": "button",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h2
+            className="popup--title"
+          >
+            Your answer was not correct!
+          </h2>,
+          <h3
+            className="popup-text"
+          >
+            Sorry!  Please try again.
+          </h3>,
+          <button
+            className="popup--button"
+            onClick={[MockFunction]}
+            type="button"
+          >
+            Return to Question List
+          </button>,
+        ],
+        "className": "popup--container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Your answer was not correct!",
+            "className": "popup--title",
+          },
+          "ref": null,
+          "rendered": "Your answer was not correct!",
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Sorry!  Please try again.",
+            "className": "popup-text",
+          },
+          "ref": null,
+          "rendered": "Sorry!  Please try again.",
+          "type": "h3",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Return to Question List",
+            "className": "popup--button",
+            "onClick": [MockFunction],
+            "type": "button",
+          },
+          "ref": null,
+          "rendered": "Return to Question List",
+          "type": "button",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

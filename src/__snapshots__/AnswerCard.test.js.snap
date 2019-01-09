@@ -17,6 +17,7 @@ ShallowWrapper {
         "question": "What is the default value of the THIS keyword?",
       }
     }
+    returnToDisplayAll={[MockFunction]}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -35,28 +36,46 @@ ShallowWrapper {
         <h3
           className="answer-card--question"
         >
+          1
+          ) 
           What is the default value of the THIS keyword?
         </h3>,
         <h3
           className="answer-card--correct-answer"
         >
-          Correct: 
+          Correct Answer: 
           The Global Window Object
         </h3>,
+        <h3
+          className="answer-card--text"
+        >
+          Are you confident about this information?
+        </h3>,
+        <button
+          className="answer-card--save-button"
+          onClick={[MockFunction]}
+        >
+          Save and Remove from Question Bank
+        </button>,
+        <h3
+          className="answer-card--text"
+        >
+          Not so confident?  Go back to the question bank.  You can try again later!
+        </h3>,
+        <button
+          className="answer-card--return-button"
+          onClick={[MockFunction]}
+        >
+          Return without save
+        </button>,
         <a
           className="answer-card--link"
           href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this"
           rel="noopener noreferrer"
           target="_blank"
         >
-          More Info
+          Want More Info?
         </a>,
-        <button
-          className="answer-card--button"
-          onClick={[MockFunction]}
-        >
-          Store Answer For Later
-        </button>,
       ],
       "className": "answer-card",
       "id": 1,
@@ -68,11 +87,19 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "What is the default value of the THIS keyword?",
+          "children": Array [
+            1,
+            ") ",
+            "What is the default value of the THIS keyword?",
+          ],
           "className": "answer-card--question",
         },
         "ref": null,
-        "rendered": "What is the default value of the THIS keyword?",
+        "rendered": Array [
+          1,
+          ") ",
+          "What is the default value of the THIS keyword?",
+        ],
         "type": "h3",
       },
       Object {
@@ -81,14 +108,14 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            "Correct: ",
+            "Correct Answer: ",
             "The Global Window Object",
           ],
           "className": "answer-card--correct-answer",
         },
         "ref": null,
         "rendered": Array [
-          "Correct: ",
+          "Correct Answer: ",
           "The Global Window Object",
         ],
         "type": "h3",
@@ -98,28 +125,65 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "More Info",
-          "className": "answer-card--link",
-          "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this",
-          "rel": "noopener noreferrer",
-          "target": "_blank",
+          "children": "Are you confident about this information?",
+          "className": "answer-card--text",
         },
         "ref": null,
-        "rendered": "More Info",
-        "type": "a",
+        "rendered": "Are you confident about this information?",
+        "type": "h3",
       },
       Object {
         "instance": null,
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Store Answer For Later",
-          "className": "answer-card--button",
+          "children": "Save and Remove from Question Bank",
+          "className": "answer-card--save-button",
           "onClick": [MockFunction],
         },
         "ref": null,
-        "rendered": "Store Answer For Later",
+        "rendered": "Save and Remove from Question Bank",
         "type": "button",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Not so confident?  Go back to the question bank.  You can try again later!",
+          "className": "answer-card--text",
+        },
+        "ref": null,
+        "rendered": "Not so confident?  Go back to the question bank.  You can try again later!",
+        "type": "h3",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Return without save",
+          "className": "answer-card--return-button",
+          "onClick": [MockFunction],
+        },
+        "ref": null,
+        "rendered": "Return without save",
+        "type": "button",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Want More Info?",
+          "className": "answer-card--link",
+          "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this",
+          "rel": "noopener noreferrer",
+          "target": "_blank",
+        },
+        "ref": null,
+        "rendered": "Want More Info?",
+        "type": "a",
       },
     ],
     "type": "div",
@@ -134,28 +198,46 @@ ShallowWrapper {
           <h3
             className="answer-card--question"
           >
+            1
+            ) 
             What is the default value of the THIS keyword?
           </h3>,
           <h3
             className="answer-card--correct-answer"
           >
-            Correct: 
+            Correct Answer: 
             The Global Window Object
           </h3>,
+          <h3
+            className="answer-card--text"
+          >
+            Are you confident about this information?
+          </h3>,
+          <button
+            className="answer-card--save-button"
+            onClick={[MockFunction]}
+          >
+            Save and Remove from Question Bank
+          </button>,
+          <h3
+            className="answer-card--text"
+          >
+            Not so confident?  Go back to the question bank.  You can try again later!
+          </h3>,
+          <button
+            className="answer-card--return-button"
+            onClick={[MockFunction]}
+          >
+            Return without save
+          </button>,
           <a
             className="answer-card--link"
             href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this"
             rel="noopener noreferrer"
             target="_blank"
           >
-            More Info
+            Want More Info?
           </a>,
-          <button
-            className="answer-card--button"
-            onClick={[MockFunction]}
-          >
-            Store Answer For Later
-          </button>,
         ],
         "className": "answer-card",
         "id": 1,
@@ -167,11 +249,19 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "What is the default value of the THIS keyword?",
+            "children": Array [
+              1,
+              ") ",
+              "What is the default value of the THIS keyword?",
+            ],
             "className": "answer-card--question",
           },
           "ref": null,
-          "rendered": "What is the default value of the THIS keyword?",
+          "rendered": Array [
+            1,
+            ") ",
+            "What is the default value of the THIS keyword?",
+          ],
           "type": "h3",
         },
         Object {
@@ -180,14 +270,14 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              "Correct: ",
+              "Correct Answer: ",
               "The Global Window Object",
             ],
             "className": "answer-card--correct-answer",
           },
           "ref": null,
           "rendered": Array [
-            "Correct: ",
+            "Correct Answer: ",
             "The Global Window Object",
           ],
           "type": "h3",
@@ -197,28 +287,65 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "More Info",
-            "className": "answer-card--link",
-            "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this",
-            "rel": "noopener noreferrer",
-            "target": "_blank",
+            "children": "Are you confident about this information?",
+            "className": "answer-card--text",
           },
           "ref": null,
-          "rendered": "More Info",
-          "type": "a",
+          "rendered": "Are you confident about this information?",
+          "type": "h3",
         },
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Store Answer For Later",
-            "className": "answer-card--button",
+            "children": "Save and Remove from Question Bank",
+            "className": "answer-card--save-button",
             "onClick": [MockFunction],
           },
           "ref": null,
-          "rendered": "Store Answer For Later",
+          "rendered": "Save and Remove from Question Bank",
           "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Not so confident?  Go back to the question bank.  You can try again later!",
+            "className": "answer-card--text",
+          },
+          "ref": null,
+          "rendered": "Not so confident?  Go back to the question bank.  You can try again later!",
+          "type": "h3",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Return without save",
+            "className": "answer-card--return-button",
+            "onClick": [MockFunction],
+          },
+          "ref": null,
+          "rendered": "Return without save",
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Want More Info?",
+            "className": "answer-card--link",
+            "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this",
+            "rel": "noopener noreferrer",
+            "target": "_blank",
+          },
+          "ref": null,
+          "rendered": "Want More Info?",
+          "type": "a",
         },
       ],
       "type": "div",
