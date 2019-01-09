@@ -25,6 +25,9 @@
   background-color: #6B3137;
   margin: 5px;
   height: 18.5%;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .submit-answer-button {
@@ -33,4 +36,7 @@
   background-color: white;
   border-radius: 20px;
   margin: 5px;
+  &:hover {
+    cursor: pointer;
+  }
 }
