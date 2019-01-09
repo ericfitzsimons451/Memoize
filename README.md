@@ -24,14 +24,13 @@
 
 ## Deployed Website
 
+
+
 ## Future iterations:
 - Add details to dataset so that answer card has more information.
 - Add transitions, from Display All view to Single Card, for better UI.
 - Add filter function to sort by categories.
 - Implement login to save player information.
-
-## Wireframe
-
 
 ## Video/Screenshots
 ![screencast-localhost-3002-2019 01 09-07-48-15](https://user-images.githubusercontent.com/39415039/50906813-2a518400-13e3-11e9-940b-695a027dfafe.gif)
@@ -44,7 +43,10 @@
 
 <img width="659" alt="screen shot 2019-01-09 at 12 46 08 am" src="https://user-images.githubusercontent.com/39415039/50905955-40f6db80-13e1-11e9-8405-7d32e43d4a13.png">
 
+## Wireframe
+
+<img width="892" alt="screen shot 2019-01-09 at 8 00 14 am" src="https://user-images.githubusercontent.com/39415039/50907449-a7312d80-13e4-11e9-93d0-b34d65fc2504.png">
+
 ## Contributors
 
 [Eric Fitzsimons](https://github.com/ericfitzsimons451)
-
