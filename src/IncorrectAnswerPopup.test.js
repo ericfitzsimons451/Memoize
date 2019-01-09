@@ -18,7 +18,7 @@ describe('IncorrectAnswerPopup', () =>{
   })
 
   it('should register a click when RETURN TO QUESTION LIST has been clicked', () => {
-    wrapper.find('.popup-button').simulate('click')
+    wrapper.find('.popup--button').simulate('click')
     expect(mockReturnToDisplayAll).toBeCalled()
   })
 })

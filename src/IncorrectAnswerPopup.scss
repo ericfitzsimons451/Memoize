@@ -1,0 +1,32 @@
+.popup--container {
+  width: 600px;
+  height: 450px;
+  border: 1px solid black;
+  background-color: #778078;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  border-radius: 15px;
+  justify-content: space-around;
+}
+
+.popup--title {
+  font-size: 2.3rem;
+}
+
+.popup-text {
+  font-size: 2.3rem;
+}
+
+.popup--button {
+  height: 80px;
+  font-size: 1.7rem;
+  margin: 0px 20px 0px 20px;
+  padding: 3px;
+  background-color: white;
+  border-radius: 15px;
+  &:hover {
+    cursor: pointer;
+  }
+}

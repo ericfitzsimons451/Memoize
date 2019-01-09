@@ -21,20 +21,24 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <h2
-          className="popup-title"
-        />,
-        <h3>
-          Sorry!  That answer is not correct.  Please try again.
+          className="popup--title"
+        >
+          Your answer was not correct!
+        </h2>,
+        <h3
+          className="popup-text"
+        >
+          Sorry!  Please try again.
         </h3>,
         <button
-          className="popup-button"
+          className="popup--button"
           onClick={[MockFunction]}
           type="button"
         >
           Return to Question List
         </button>,
       ],
-      "className": "popup-container",
+      "className": "popup--container",
     },
     "ref": null,
     "rendered": Array [
@@ -43,10 +47,11 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "className": "popup-title",
+          "children": "Your answer was not correct!",
+          "className": "popup--title",
         },
         "ref": null,
-        "rendered": null,
+        "rendered": "Your answer was not correct!",
         "type": "h2",
       },
       Object {
@@ -54,10 +59,11 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Sorry!  That answer is not correct.  Please try again.",
+          "children": "Sorry!  Please try again.",
+          "className": "popup-text",
         },
         "ref": null,
-        "rendered": "Sorry!  That answer is not correct.  Please try again.",
+        "rendered": "Sorry!  Please try again.",
         "type": "h3",
       },
       Object {
@@ -66,7 +72,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "Return to Question List",
-          "className": "popup-button",
+          "className": "popup--button",
           "onClick": [MockFunction],
           "type": "button",
         },
@@ -85,20 +91,24 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <h2
-            className="popup-title"
-          />,
-          <h3>
-            Sorry!  That answer is not correct.  Please try again.
+            className="popup--title"
+          >
+            Your answer was not correct!
+          </h2>,
+          <h3
+            className="popup-text"
+          >
+            Sorry!  Please try again.
           </h3>,
           <button
-            className="popup-button"
+            className="popup--button"
             onClick={[MockFunction]}
             type="button"
           >
             Return to Question List
           </button>,
         ],
-        "className": "popup-container",
+        "className": "popup--container",
       },
       "ref": null,
       "rendered": Array [
@@ -107,10 +117,11 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "className": "popup-title",
+            "children": "Your answer was not correct!",
+            "className": "popup--title",
           },
           "ref": null,
-          "rendered": null,
+          "rendered": "Your answer was not correct!",
           "type": "h2",
         },
         Object {
@@ -118,10 +129,11 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Sorry!  That answer is not correct.  Please try again.",
+            "children": "Sorry!  Please try again.",
+            "className": "popup-text",
           },
           "ref": null,
-          "rendered": "Sorry!  That answer is not correct.  Please try again.",
+          "rendered": "Sorry!  Please try again.",
           "type": "h3",
         },
         Object {
@@ -130,7 +142,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "Return to Question List",
-            "className": "popup-button",
+            "className": "popup--button",
             "onClick": [MockFunction],
             "type": "button",
           },

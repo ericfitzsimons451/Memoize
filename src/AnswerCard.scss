@@ -1,26 +1,50 @@
 .answer-card {
-  width: 400px;
-  height: 250px;
+  width: 600px;
+  height: 650px;
   border: 1px solid black;
   background-color: #778078;
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
   display: flex;
   flex-direction: column;
   margin: 5px;
+  border-radius: 15px;
+  justify-content: space-around;
 }
 
 .answer-card--question {
-  font-size: 2rem;
+  font-size: 2.3rem;
   padding: 7px;
+  margin: 5px;
 }
 
 .answer-card--correct-answer {
   font-size: 1.7rem;
+  margin: 0px 20px 0px 20px;
   padding: 7px;
-  background-color: red;
+  background-color: white;
   border-radius: 15px;
 }
 
-.answer-card-link {
-  font-size: 2.3rem
+.answer-card--link {
+  font-size: 2.3rem;
+  margin: 15px;
+}
+
+.answer-card--save-button, 
+.answer-card--return-button {
+  height: 80px;
+  font-size: 1.7rem;
+  margin: 0px 20px 0px 20px;
+  padding: 3px;
+  background-color: white;
+  border-radius: 15px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.answer-card--text {
+  font-size: 1.8rem;
+  padding: 7px;
+  margin: 5px;
 }

@@ -13,6 +13,7 @@ const currentAnswerToDisplay = { "id": 1,
   }
 
 const mockPutInLocalStorage = jest.fn();
+const mockReturnToDisplayAll = jest.fn();
 
 describe('AnswerCard', () => {
   let wrapper;
@@ -20,7 +21,8 @@ describe('AnswerCard', () => {
   beforeEach(() => {
     wrapper = shallow(
       <AnswerCard questionInfo={currentAnswerToDisplay}
-                  putInLocalStorage={mockPutInLocalStorage} />
+                  putInLocalStorage={mockPutInLocalStorage}
+                  returnToDisplayAll={mockReturnToDisplayAll} />
       )
   })
 
@@ -28,8 +30,13 @@ describe('AnswerCard', () => {
     expect(wrapper).toMatchSnapshot()
   })
 
-  it('should register a click when STORE ANSWER FOR LATER is clicked', () => {
-    wrapper.find('.answer-card--button').simulate('click')
+  it('should register a click when Save and Remove from Question Bank is clicked', () => {
+    wrapper.find('.answer-card--save-button').simulate('click')
     expect(mockPutInLocalStorage).toBeCalled()
+  })
+
+  it('should register a click when Return Without Save is clicked', () => {
+    wrapper.find('.answer-card--return-button').simulate('click')
+    expect(mockReturnToDisplayAll).toBeCalled();
   })
 })
