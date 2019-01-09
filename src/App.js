@@ -27,8 +27,7 @@ class App extends Component {
     .catch(err => console.log(err))
   }
 
-  displayInstructions = (event) => {
-    event.preventDefault()
+  displayInstructions = () => {
     this.setState({showInstructions: true})
   }
 
