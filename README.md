@@ -12,7 +12,7 @@
 
 ## Background/About
 
-### This project was my first attempt at a solo application using ReactJS.  As a 2nd module student at Turing School of Software and Design, this week-long endeavor was part of our final evaluation.  Datasets were created to represent a portion of the necessary concepts that were covered in our six-week module.  My app was designed to be a teaching tool to solidify concepts learned during our course of study.  The project required an API fetch from Heroku, the use of Sass styling and a test suite using Jest/Enzyme.  
+### This project was my first solo application using ReactJS.  As a 2nd module student at Turing School of Software and Design, this week-long endeavor was part of our final evaluation.  Datasets were created to represent a portion of the necessary concepts that were covered in our 2nd six-week module.  My app was designed as a teaching tool to solidify concepts learned during our course of study.  The project required an API fetch from Heroku, the use of Sass styling and a test suite using Jest/Enzyme.  
 
 ## Tech Stack
 
