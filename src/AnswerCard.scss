@@ -27,6 +27,7 @@
   padding: 7px;
   background-color: white;
   border-radius: 15px;
+
 }
 
 .answer-card--link {
@@ -44,6 +45,7 @@
   border-radius: 15px;
   &:hover {
     cursor: pointer;
+    background-color: #F19143;
   }
 }
 

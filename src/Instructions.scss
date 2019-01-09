@@ -10,6 +10,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  background-color: #ada37d;
+  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
 }
 
 .instructions-header {
@@ -33,4 +35,8 @@
   font-size: 1.8rem;
   background-color: yellow;
   border-radius: 15px;
+  &:hover {
+    cursor: pointer;
+    background-color: #F19143;
+  }
 }
