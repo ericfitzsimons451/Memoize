@@ -49,7 +49,6 @@ class App extends Component {
   showAllQuestions = (obj) => {
     localStorage.clear()
     this.setState({correctlyAnsweredQuestions: obj, isLoading: false, showInstructions: false})
-
   }
 
   render() {
@@ -78,8 +77,8 @@ class App extends Component {
             <h1 className="App-title">Mod 2 Study Guide</h1>
             <div className="app-button-container">
               <InstructionsButton displayInstructions={this.displayInstructions} />
-             <ShowAllQuestionsButton showAllQuestions={this.showAllQuestions} />
-           </div>
+              <ShowAllQuestionsButton showAllQuestions={this.showAllQuestions} />
+            </div>
             <Display questionBank={this.getUnansweredQuestions()}
                      setAnsweredQuestionsInState={this.setAnsweredQuestionsInState}
                      key={this.state.data.id} />
