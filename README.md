@@ -24,7 +24,7 @@
 
 ## Future iterations:
 - Add details to dataset so that answer card has more information.
-- Add transitions, from Display All view to Single Card, for better UI.
+- Add transitions from Display All view to Single Card for better UI.
 - Add filter function to sort by categories.
 - Implement login to save player information.
 
