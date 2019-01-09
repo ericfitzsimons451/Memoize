@@ -1,13 +1,13 @@
 {
-  "main.css": "/Memoize/./static/css/main.d1d787cf.chunk.css",
-  "main.js": "/Memoize/./static/js/main.fe202f98.chunk.js",
-  "main.js.map": "/Memoize/./static/js/main.fe202f98.chunk.js.map",
+  "main.css": "/Memoize/./static/css/main.b01a8ca8.chunk.css",
+  "main.js": "/Memoize/./static/js/main.03193388.chunk.js",
+  "main.js.map": "/Memoize/./static/js/main.03193388.chunk.js.map",
   "static/js/1.c858d37c.chunk.js": "/Memoize/./static/js/1.c858d37c.chunk.js",
   "static/js/1.c858d37c.chunk.js.map": "/Memoize/./static/js/1.c858d37c.chunk.js.map",
   "runtime~main.js": "/Memoize/./static/js/runtime~main.8f2ab7b3.js",
   "runtime~main.js.map": "/Memoize/./static/js/runtime~main.8f2ab7b3.js.map",
-  "static/css/main.d1d787cf.chunk.css.map": "/Memoize/./static/css/main.d1d787cf.chunk.css.map",
+  "static/css/main.b01a8ca8.chunk.css.map": "/Memoize/./static/css/main.b01a8ca8.chunk.css.map",
   "index.html": "/Memoize/./index.html",
-  "precache-manifest.4437f59398817b9b302a45255f1154f6.js": "/Memoize/./precache-manifest.4437f59398817b9b302a45255f1154f6.js",
+  "precache-manifest.c4f242a8face7346eef4cf3442b2a72f.js": "/Memoize/./precache-manifest.c4f242a8face7346eef4cf3442b2a72f.js",
   "service-worker.js": "/Memoize/./service-worker.js"
 }
