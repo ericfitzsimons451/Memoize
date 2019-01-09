@@ -1,17 +1,17 @@
 .instructions-display {
-  position: absolute;
-  top: 15px;
-  z-index: 50;
-  height: 700px;
-  width: 800px;
-  border-radius: 50px;
+  align-items: center;
+  background-color: #ada37d;
   background-color: white;
+  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+  border-radius: 50px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  height: 700px;
   justify-content: space-between;
-  background-color: #ada37d;
-  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+  position: absolute;
+  top: 15px;
+  width: 800px;
+  z-index: 50;
 }
 
 .instructions-header {

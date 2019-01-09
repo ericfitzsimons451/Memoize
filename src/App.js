@@ -3,8 +3,7 @@ import Display from './Display.js';
 import InstructionsButton from './InstructionsButton.js';
 import Instructions from './Instructions.js';
 import ShowAllQuestionsButton from './ShowAllQuestionsButton.js'
-import './reset.css';
-import './App.scss';
+import './main.scss'
 
 class App extends Component {
   constructor() {

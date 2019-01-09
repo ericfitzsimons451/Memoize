@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import Question from './Question.js'
 import AnswerCard from './AnswerCard.js'
 import IncorrectAnswerPopup from './IncorrectAnswerPopup.js'
-import './reset.css'
-import './Display.scss'
+import './main.scss'
 
 class Display extends Component {
   constructor(props) {

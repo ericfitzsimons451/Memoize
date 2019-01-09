@@ -1,5 +1,5 @@
 import React from 'react';
-import './ShowAllQuestionsButton.scss';
+import './main.scss'
 
 function ShowAllQuestionsButton(props) {
   return(
