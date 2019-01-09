@@ -24,6 +24,7 @@
 
 ## Deployed Site
 [Need To Do To Pass Mod 2](https://ericfitzsimons451.github.io/Memoize/.)
+### You will need to tell your browser to 'Load Unsafe Scripts' to use this app.
 
 ## Future iterations:
 - Add details to dataset so that answer card has more information.
