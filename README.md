@@ -22,6 +22,9 @@
 - Sass
 - Heroku API fetch
 
+## Deployed Site
+[Need To Do To Pass Mod 2](https://ericfitzsimons451.github.io/Memoize/.)
+
 ## Future iterations:
 - Add details to dataset so that answer card has more information.
 - Add transitions from Display All view to Single Card for better UI.

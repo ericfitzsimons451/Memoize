@@ -23,7 +23,7 @@ describe('App', () => {
   let wrapper;
 
   beforeEach(() => {
-    localStorage.setItem('correctAnswers', [true, true, true])
+    // localStorage.setItem('correctAnswers', [true, true, true])
     wrapper = shallow(
       <App />
       )

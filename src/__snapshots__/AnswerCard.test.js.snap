@@ -33,6 +33,11 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
+        <h2
+          className="answer-card--correct"
+        >
+          CORRECT!
+        </h2>,
         <h3
           className="answer-card--question"
         >
@@ -82,6 +87,18 @@ ShallowWrapper {
     },
     "ref": null,
     "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "CORRECT!",
+          "className": "answer-card--correct",
+        },
+        "ref": null,
+        "rendered": "CORRECT!",
+        "type": "h2",
+      },
       Object {
         "instance": null,
         "key": undefined,
@@ -195,6 +212,11 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
+          <h2
+            className="answer-card--correct"
+          >
+            CORRECT!
+          </h2>,
           <h3
             className="answer-card--question"
           >
@@ -244,6 +266,18 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "CORRECT!",
+            "className": "answer-card--correct",
+          },
+          "ref": null,
+          "rendered": "CORRECT!",
+          "type": "h2",
+        },
         Object {
           "instance": null,
           "key": undefined,
