@@ -1,5 +1,5 @@
 import React from 'react';
-import './Instructions.scss';
+import './main.scss'
 
 function Instructions(props) {
   return(

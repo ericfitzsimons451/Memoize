@@ -1,5 +1,5 @@
 import React from 'react';
-import './AnswerCard.scss';
+import './main.scss';
 
 function AnswerCard(props) {
   return(

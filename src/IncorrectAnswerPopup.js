@@ -1,5 +1,5 @@
 import React from 'react';
-import './IncorrectAnswerPopup.scss';
+import './main.scss'
 
 function IncorrectAnswerPopup(props) {
   return(

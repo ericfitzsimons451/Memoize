@@ -1,6 +1,5 @@
 import React from 'react';
-import './reset.css'
-import './Question.scss';
+import './main.scss'
 
 function Question(props) {
   return (

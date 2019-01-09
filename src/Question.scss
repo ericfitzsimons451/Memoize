@@ -15,9 +15,7 @@
   padding: 7px 0px 20px 0px;
 }
 
-.answer-selection-one,
-.answer-selection-two,
-.answer-selection-three {
+@mixin answer-styling {
   font-size: 1.5rem;
   padding: 10px 15px 10px 15px;
   border-bottom: 1px dashed white;
@@ -30,6 +28,13 @@
     background-color: #F19143;
   }
 }
+
+.answer-selection-one,
+.answer-selection-two,
+.answer-selection-three {
+ @include answer-styling
+}
+
 
 .submit-answer-button {
   height: 18.5%;
