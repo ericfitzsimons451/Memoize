@@ -33,7 +33,9 @@
 ## Wireframe
 
 
-## Screenshots
+## Video/Screenshots
+![screencast-localhost-3002-2019 01 09-07-48-15](https://user-images.githubusercontent.com/39415039/50906813-2a518400-13e3-11e9-940b-695a027dfafe.gif)
+
 <img width="1394" alt="screen shot 2019-01-09 at 12 37 54 am" src="https://user-images.githubusercontent.com/39415039/50905804-db0a5400-13e0-11e9-96ff-c1ed33ebf0b8.png">
 
 <img width="1440" alt="screen shot 2019-01-09 at 12 45 15 am" src="https://user-images.githubusercontent.com/39415039/50905830-ec536080-13e0-11e9-85d3-8b8999167ad6.png">
